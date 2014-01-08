@@ -1,0 +1,1 @@
+awk 'BEGIN { count1 = 0; count2 = 0; count3 = 0; total = 0; }  { count1 += $2; count2 += $3; count3 += $4; total += 1; } END { print count1,count2,count3,total ; print (count1*100)/total,(count2*100)/total,(count3*100)/total}' cachefinal.log
